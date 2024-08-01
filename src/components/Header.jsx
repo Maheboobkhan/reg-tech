@@ -187,7 +187,7 @@ class Navbar extends Component {
       <nav className={`md:px-10 py-2 z-50 ${isNavbarFixed ? 'fixed top-0 left-0 z-50 w-full bg-white border-b-[0.5px] border-[#c6c2c2]' : 'relative bg-white'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
-            <img src='/public/logo2.png' className='w-40' alt="Logo" />
+            <img src='public/logo2.png' className='w-40' alt="Logo" />
           </div>
 
           <div className="md:hidden">
