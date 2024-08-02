@@ -3,11 +3,16 @@
 import React from 'react';
 import data from '../components/jsonData/CustomerVerification.json';
 import FooterForAllComponent from '../components/FooterForAllPage';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class CustomerVerification extends React.Component {
+    componentDidMount() {
+        AOS.init({ duration: 1000, once: true });
+      }
     render() {
         return (
-            <div className='mt-24'>
+            <div className='mt-24' data-aos="fade-up-left">
                 <div className="relative z-[-2] bg-[#e27daa] md:h-[80px] h-[50px] w-[60%] mt-[20px]">
                     <h1 className="absolute top-1/2 left-[52%] transform w-full -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-montserrat tracking-wider">
                         Customer Verification

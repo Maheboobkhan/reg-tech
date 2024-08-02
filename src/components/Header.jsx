@@ -466,6 +466,195 @@
 
 
 
+// import React, { Component } from 'react';
+// import { Link } from 'react-router-dom';
+// import { HiChevronDown } from 'react-icons/hi';
+// import { FiLogIn } from 'react-icons/fi';
+
+// class Navbar extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       isMenuOpen: false,
+//       isNavbarFixed: false,
+//       isOpen: false,
+//       isFileServiceDropdownOpen: false,
+//     };
+
+//     this.toggleMenu = this.toggleMenu.bind(this);
+//     this.toggleDropdown = this.toggleDropdown.bind(this);
+//     this.this.removeMenu = this.this.removeMenu.bind(this);
+//     this.toggleServicesDropdown = this.toggleServicesDropdown.bind(this);
+//     this.handleScroll = this.handleScroll.bind(this);
+//   }
+
+//   componentDidMount() {
+//     window.addEventListener('scroll', this.handleScroll);
+//   }
+
+//   componentWillUnmount() {
+//     window.removeEventListener('scroll', this.handleScroll);
+//   }
+
+//   handleScroll() {
+//     const scrollY = window.scrollY;
+//     const scrollThreshold = 20;
+
+//     this.setState({
+//       isNavbarFixed: scrollY > scrollThreshold,
+//     });
+//   }
+
+//   toggleMenu() {
+//     this.setState(prevState => ({
+//       isMenuOpen: !prevState.isMenuOpen,
+//     }));
+//   }
+
+//   toggleDropdown() {
+//     this.setState(prevState => ({
+//       isOpen: !prevState.isOpen,
+//     }));
+//   }
+
+//   toggleServicesDropdown = () => {
+//     this.setState(prevState => ({
+//       isServicesDropdownOpen: !prevState.isServicesDropdownOpen
+//     }));
+//   };
+
+//   removeMenu(){
+//     this.setState({
+//       isOpen: false,
+//     });
+//   }
+
+//   render() {
+//     const { isMenuOpen, isNavbarFixed, isOpen, isServicesDropdownOpen } = this.state;
+
+//     return (
+//       // <nav className='md:px-10 py-2 fixed top-0 left-0 w-full bg-transparent border-gray-300 z-50'>
+//       <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] transition-all duration-400 border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
+//         <div className="container mx-auto flex justify-between items-center">
+//           <div className="text-white leading-4">
+//             <img src='logo/logo2.png' className='md:w-40 w-28' alt="Logo" />
+//           </div>
+
+//           <div className="md:hidden">
+//             <button onClick={this.toggleMenu} className="text-black focus:outline-none">
+//               {isMenuOpen ? (
+//                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+//                 </svg>
+//               ) : (
+//                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+//                 </svg>
+//               )}
+//             </button>
+//           </div>
+
+//           <ul className="hidden md:flex items-center space-x-4 mb-2">
+//             <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Home</Link></li>
+//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Company</a></li>
+//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Careers</a></li>
+//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Blog</a></li>
+//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Contact Us</a></li>
+//             <div className="relative inline-block text-left">
+//               <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
+//                 <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'>
+//                   <span>RegTech Services</span>
+//                   <HiChevronDown className="ml-2 inline" />
+//                 </div>
+//               </button>
+//               <div className={`absolute left-0 top-full mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`} style={{ zIndex: 1000 }}>
+//                 <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Customer Verification</Link>
+//                 <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Bank Account Verification</Link>
+//                 <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Kyc</Link>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Video-Kyc</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Sign</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Offline Aadhar</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Aadhar Masking</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">DB Fmatch</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">e-NACH/e-Mandate</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Verified Customer Acquisition</a>
+//                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
+//               </div>
+//             </div>
+//             <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+//               <a href="#" className="flex items-center">
+//                 <FiLogIn className='mr-2' />Login
+//               </a>
+//             </button>
+//           </ul>
+
+//           <div className={`md:hidden absolute md:top-[66.5px] top-[52px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
+//             <ul className="flex flex-col items-center space-y-4 py-2">
+//               <li><Link onClick={this.removeMenu} to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
+
+//               <li className="relative">
+//                 <button
+//                   onClick={this.toggleServicesDropdown}
+//                   className="flex items-center text-black font-montserrat active:text-[#e27daa] focus:outline-none"
+//                 >
+//                   <span className='text-[#e27daa] active:text-black font-montserrat font-bold'>RegTech Services</span>
+//                   <HiChevronDown
+//                     className={`ml-2 text-[#e27daa] transition-transform ${isServicesDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
+//                     style={{ transition: 'transform 0.3s ease-in-out' }}
+//                   />
+//                 </button>
+//                 {isServicesDropdownOpen && <div
+//                   className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'
+//                 >
+
+//                   <ul className="py-2 pb-32">
+//                     <Link onClick={this.removeMenu} to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
+//                     <Link onClick={this.removeMenu} to="account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
+//                     <Link onClick={this.removeMenu} to="e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</Link>
+//                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</Link>
+//                     <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//                       <a href="/customer_verification" className="flex items-center">
+//                         <FiLogIn className='mr-2' />Login
+//                       </a>
+//                     </button>
+//                   </ul>
+//                 </div>}
+//               </li>
+//             </ul>
+//             <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//               <a href="#" className="flex items-center">
+//                 <FiLogIn className='mr-2' />Login
+//               </a>
+//             </button>
+//           </div>
+
+//         </div>
+//       </nav>
+//     );
+//   }
+// }
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HiChevronDown } from 'react-icons/hi';
@@ -478,11 +667,13 @@ class Navbar extends Component {
       isMenuOpen: false,
       isNavbarFixed: false,
       isOpen: false,
-      isFileServiceDropdownOpen: false,
+      isServicesDropdownOpen: false,
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.toggleServicesDropdown = this.toggleServicesDropdown.bind(this);
+    this.removeMenu = this.removeMenu.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -515,18 +706,25 @@ class Navbar extends Component {
     }));
   }
 
-  toggleServicesDropdown = () => {
+  toggleServicesDropdown() {
     this.setState(prevState => ({
       isServicesDropdownOpen: !prevState.isServicesDropdownOpen
     }));
-  };
+  }
+
+  removeMenu() {
+    this.setState({
+      isMenuOpen: false,
+      isServicesDropdownOpen: false,
+      isOpen: false,
+    });
+  }
 
   render() {
     const { isMenuOpen, isNavbarFixed, isOpen, isServicesDropdownOpen } = this.state;
 
     return (
-      // <nav className='md:px-10 py-2 fixed top-0 left-0 w-full bg-transparent border-gray-300 z-50'>
-      <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] transition-all duration-400 border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
+      <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
             <img src='logo/logo2.png' className='md:w-40 w-28' alt="Logo" />
@@ -547,11 +745,11 @@ class Navbar extends Component {
           </div>
 
           <ul className="hidden md:flex items-center space-x-4 mb-2">
-            <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Home</Link></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Company</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Careers</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Blog</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Contact Us</a></li>
+            <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Home</Link></li>
+            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Company</a></li>
+            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Careers</a></li>
+            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Blog</a></li>
+            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Contact Us</a></li>
             <div className="relative inline-block text-left">
               <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
                 <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'>
@@ -560,17 +758,17 @@ class Navbar extends Component {
                 </div>
               </button>
               <div className={`absolute left-0 top-full mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`} style={{ zIndex: 1000 }}>
-                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Customer Verification</Link>
-                <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Bank Account Verification</Link>
-                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Kyc</Link>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Video-Kyc</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Sign</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Offline Aadhar</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Aadhar Masking</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">DB Fmatch</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">e-NACH/e-Mandate</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Verified Customer Acquisition</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
+                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Customer Verification</Link>
+                <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Bank Account Verification</Link>
+                <Link to="/e_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Kyc</Link>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Video-Kyc</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Sign</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Verified Customer Acquisition</a>
+                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Vehicle Verification</a>
               </div>
             </div>
             <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
@@ -582,11 +780,11 @@ class Navbar extends Component {
 
           <div className={`md:hidden absolute md:top-[66.5px] top-[52px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
             <ul className="flex flex-col items-center space-y-4 py-2">
-              <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-              <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
-              <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
-              <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
-              <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
+              <li><Link onClick={this.removeMenu} to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
+              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
+              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
+              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
 
               <li className="relative">
                 <button
@@ -599,23 +797,20 @@ class Navbar extends Component {
                     style={{ transition: 'transform 0.3s ease-in-out' }}
                   />
                 </button>
-                {isServicesDropdownOpen && <div
-                  className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'
-                >
-
+                {isServicesDropdownOpen && <div className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'>
                   <ul className="py-2 pb-32">
-                    <Link to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
-                    <Link to="account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
-                    <Link to="e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</a>
-                    <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+                    <Link onClick={this.removeMenu} to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
+                    <Link onClick={this.removeMenu} to="account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
+                    <Link onClick={this.removeMenu} to="e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</Link>
+                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</Link>
+                    <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
                       <a href="/customer_verification" className="flex items-center">
                         <FiLogIn className='mr-2' />Login
                       </a>
@@ -624,13 +819,12 @@ class Navbar extends Component {
                 </div>}
               </li>
             </ul>
-            <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+            <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
               <a href="#" className="flex items-center">
                 <FiLogIn className='mr-2' />Login
               </a>
             </button>
           </div>
-
         </div>
       </nav>
     );
