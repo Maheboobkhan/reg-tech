@@ -8,6 +8,9 @@ import Footer from './components/Footer';
 import BankAccountVerification from './pages/BankAccountVerification';
 import EKyc from './pages/EKyc';
 import FooterForAllComponent from './components/FooterForAllPage';
+import VideoKyc from './pages/VideoKyc';
+import ESign from './pages/ESign';
+import OfflineAadhar from './pages/OfflineAadhar';
 
 
 class App extends React.Component {
@@ -21,6 +24,9 @@ class App extends React.Component {
           <Route path='/customer_verification' element={<CustomerVerification />} />
           <Route path='/account_verification' element={<BankAccountVerification />} />
           <Route path='/e_kyc' element={<EKyc />} />
+          <Route path='/video_kyc' element={<VideoKyc />} />
+          <Route path='/e_sign' element={<ESign />} />
+          <Route path='/aadhar' element={<OfflineAadhar />} />
         </Routes>
         {/* <Footer /> */}
       </div>
@@ -38,56 +44,25 @@ export default App
 
 
 
+
+
+
+
+
+
+
+
 // import React, { Component } from 'react';
-// import { HiPlus, HiMinus } from 'react-icons/hi';
+// import './App.css'; // Import the CSS file for styling and animation
 
-// class ExpandableSections extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       openSection: null, // Keeps track of which section is open
-//     };
-
-//     this.toggleSection = this.toggleSection.bind(this);
-//   }
-
-//   toggleSection(index) {
-//     this.setState(prevState => ({
-//       openSection: prevState.openSection === index ? null : index
-//     }));
-//   }
-
+// class TextAnimation extends Component {
 //   render() {
-//     const { openSection } = this.state;
-//     const sections = [
-//       { title: 'Title 1', content: 'Content for Title 1' },
-//       { title: 'Title 2', content: 'Content for Title 2' },
-//       { title: 'Title 3', content: 'Content for Title 3' },
-//       { title: 'Title 4', content: 'Content for Title 4' },
-//     ];
-
 //     return (
-//       <div className="space-y-4">
-//         {sections.map((section, index) => (
-//           <div key={index} className="relative">
-//             <button
-//               onClick={() => this.toggleSection(index)}
-//               className="flex items-center justify-between w-full p-4 bg-blue-500 text-white rounded-md"
-//             >
-//               <span>{section.title}</span>
-//               {openSection === index ? <HiMinus className="text-lg" /> : <HiPlus className="text-lg" />}
-//             </button>
-
-//             {openSection === index && (
-//               <div className="mt-2 p-4 bg-gray-100 border border-gray-300 rounded-md transition-all duration-300 ease-in-out">
-//                 {section.content}
-//               </div>
-//             )}
-//           </div>
-//         ))}
+//       <div className="text-container">
+//         <p className="animated-text">This is the text where the cursor pan animation will occur.</p>
 //       </div>
 //     );
 //   }
 // }
 
-// export default ExpandableSections;
+// export default TextAnimation;

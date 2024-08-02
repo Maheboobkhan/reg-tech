@@ -727,7 +727,7 @@ class Navbar extends Component {
       <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
-            <img src='logo/logo2.png' className='md:w-40 w-28' alt="Logo" />
+            <img src='logo/logo2.png' className='md:w-36 w-28' alt="Logo" />
           </div>
 
           <div className="md:hidden">
@@ -761,14 +761,14 @@ class Navbar extends Component {
                 <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Customer Verification</Link>
                 <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Bank Account Verification</Link>
                 <Link to="/e_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Kyc</Link>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Video-Kyc</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Sign</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Verified Customer Acquisition</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Vehicle Verification</a>
+                <Link to="/video_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Video-Kyc</Link>
+                <Link to="/e_sign" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Sign</Link>
+                <Link to="/aadhar" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Verified Customer Acquisition</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Vehicle Verification</Link>
               </div>
             </div>
             <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
@@ -800,11 +800,11 @@ class Navbar extends Component {
                 {isServicesDropdownOpen && <div className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'>
                   <ul className="py-2 pb-32">
                     <Link onClick={this.removeMenu} to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
-                    <Link onClick={this.removeMenu} to="account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
-                    <Link onClick={this.removeMenu} to="e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
+                    <Link onClick={this.removeMenu} to="/account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
+                    <Link onClick={this.removeMenu} to="/e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
+                    <Link onClick={this.removeMenu} to="/video_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</Link>
+                    <Link onClick={this.removeMenu} to="/e-sign" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
+                    <Link onClick={this.removeMenu} to="/aadhar" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>

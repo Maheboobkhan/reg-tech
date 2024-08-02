@@ -95,11 +95,19 @@
 
 
 import React, { Component } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 class Banner extends Component {
+  componentDidMount() {
+    Aos.init({
+      duration: 1000,
+    });
+  }
   render() {
     return (
       <header className="absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center text-white flex items-center justify-center text-center -z-50"
+      data-aos="fade-up-left"
               style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2022/04/04/16/42/technology-7111799_1280.jpg')" }}>
               {/* // style={{ backgroundImage: "url('https://images.pexels.com/photos/2103864/pexels-photo-2103864.jpeg?auto=compress&cs=tinysrgb&w=600')" }}> */}
         <h1 className="text-6xl text-gray-300 font-montserrat text-shadow-lg">RegTech API</h1>

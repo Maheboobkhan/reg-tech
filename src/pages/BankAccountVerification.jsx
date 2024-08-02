@@ -1,5 +1,6 @@
 import React from "react";import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FooterForAllComponent from "../components/FooterForAllPage";
 
 class BankAccountVerification extends React.Component {
     componentDidMount() {
@@ -25,6 +26,7 @@ class BankAccountVerification extends React.Component {
                             className="md:w-1/4 w-full h-auto object-cover"
                         />
                     </div>
+                    <FooterForAllComponent />
             </div>
         );
     }
