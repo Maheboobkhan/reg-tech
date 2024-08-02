@@ -10,11 +10,11 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroSections />
-        <CustomerVerification />
-        <BankAccountVerification />
-        <EKyc />
+        {/* <CustomerVerification /> */}
+        {/* <BankAccountVerification /> */}
+        {/* <EKyc /> */}
         <Footer />
       </div>
     )
