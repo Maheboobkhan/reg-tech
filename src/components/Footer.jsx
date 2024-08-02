@@ -95,7 +95,7 @@ import { MdOutlineCall } from "react-icons/md";
 class Footer extends React.Component {
     render() {
         return (
-            <footer className="pt-8 bg-gray-100 text-gray-800 w-full absolute -z-50 top-[615px]">
+            <footer className="pt-8 bg-gray-100 text-gray-800 border-t border-gray-400 w-full absolute -z-50 top-[640px]">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 font-montserrat">
 
                     {/* Contact Details */}
