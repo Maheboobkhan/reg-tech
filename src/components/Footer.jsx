@@ -165,9 +165,9 @@ class Footer extends React.Component {
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="py-2 text-center mt-8 flex justify-between text-[#e5659f] border-t border-gray-300">
-                    <p className="text-sm ml-32">© 2021 All Rights Resrved by RegTech</p>
-                    <p className="text-sm mr-32">Designed & Devloped by RegTech</p>
+                <div className="py-2 text-center mt-8 flex justify-between flex-col md:flex-row text-[#e5659f] border-t border-gray-300">
+                    <p className="text-sm md:ml-32">© 2021 All Rights Resrved by RegTech</p>
+                    <p className="text-sm md:mr-32">Designed & Devloped by RegTech</p>
                 </div>
             </footer>
         );

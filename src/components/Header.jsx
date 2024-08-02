@@ -526,10 +526,10 @@ class Navbar extends Component {
 
     return (
       // <nav className='md:px-10 py-2 fixed top-0 left-0 w-full bg-transparent border-gray-300 z-50'>
-      <nav className={`md:px-10 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] transition-all duration-400 border-gray-300 z-50' : 'bg-transparent z-10'}`}>
+      <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] transition-all duration-400 border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
-            <img src='logo/logo2.png' className='w-40' alt="Logo" />
+            <img src='logo/logo2.png' className='md:w-40 w-28' alt="Logo" />
           </div>
 
           <div className="md:hidden">
@@ -560,9 +560,9 @@ class Navbar extends Component {
                 </div>
               </button>
               <div className={`absolute left-0 top-full mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`} style={{ zIndex: 1000 }}>
-                <a href="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Customer Verification</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Bank Account Verification</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Kyc</a>
+                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Customer Verification</Link>
+                <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Bank Account Verification</Link>
+                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Kyc</Link>
                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Video-Kyc</a>
                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">E-Sign</a>
                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Offline Aadhar</a>
@@ -580,7 +580,7 @@ class Navbar extends Component {
             </button>
           </ul>
 
-          <div className={`md:hidden absolute top-[66.5px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
+          <div className={`md:hidden absolute md:top-[66.5px] top-[52px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
             <ul className="flex flex-col items-center space-y-4 py-2">
               <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
               <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
@@ -603,10 +603,10 @@ class Navbar extends Component {
                   className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'
                 >
 
-                  <ul className="py-2 pb-28">
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</a>
-                    <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</a>
+                  <ul className="py-2 pb-32">
+                    <Link to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
+                    <Link to="account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
+                    <Link to="e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</a>

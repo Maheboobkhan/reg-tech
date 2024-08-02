@@ -19,8 +19,8 @@ class App extends React.Component {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/customer_verification' element={<CustomerVerification />} />
-          {/* <Route path='/account_verification' element={<BankAccountVerification />} />
-          <Route path='/e_kyc' element={<EKyc />} /> */}
+          <Route path='/account_verification' element={<BankAccountVerification />} />
+          <Route path='/e_kyc' element={<EKyc />} />
         </Routes>
         {/* <Footer /> */}
       </div>
