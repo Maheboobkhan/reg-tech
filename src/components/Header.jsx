@@ -744,12 +744,12 @@ class Navbar extends Component {
             </button>
           </div>
 
-          <ul className="hidden md:flex items-center space-x-4 mb-2">
-            <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Home</Link></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Company</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Careers</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Blog</a></li>
-            <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Contact Us</a></li>
+          <ul className={`hidden md:flex items-center space-x-4 mb-2 ${isNavbarFixed ? 'text-black' : 'text-gray-400'}`}>
+            <li><Link to="/" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Home</Link></li>
+            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Company</a></li>
+            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Careers</a></li>
+            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Blog</a></li>
+            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Contact Us</a></li>
             <div className="relative inline-block text-left">
               <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
                 <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'>
