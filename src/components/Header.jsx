@@ -529,7 +529,7 @@ class Navbar extends Component {
       <nav className={`md:px-10 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] transition-all duration-400 border-gray-300 z-50' : 'bg-transparent z-10'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
-            <img src='/public/logo/logo2.png' className='w-40' alt="Logo" />
+            <img src='logo/logo2.png' className='w-40' alt="Logo" />
           </div>
 
           <div className="md:hidden">
@@ -603,7 +603,7 @@ class Navbar extends Component {
                   className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'
                 >
 
-                  <ul className="py-2 pb-32">
+                  <ul className="py-2 pb-28">
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</a>
@@ -615,19 +615,20 @@ class Navbar extends Component {
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</a>
                     <a href="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</a>
+                    <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+                      <a href="/customer_verification" className="flex items-center">
+                        <FiLogIn className='mr-2' />Login
+                      </a>
+                    </button>
                   </ul>
                 </div>}
               </li>
             </ul>
-            {isServicesDropdownOpen ? <button className='mx-auto absolute bottom-[-150px] left-14 md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+            <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
               <a href="#" className="flex items-center">
                 <FiLogIn className='mr-2' />Login
               </a>
-            </button> : <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
-              <a href="#" className="flex items-center">
-                <FiLogIn className='mr-2' />Login
-              </a>
-            </button>}
+            </button>
           </div>
 
         </div>
