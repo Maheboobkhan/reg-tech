@@ -81,7 +81,7 @@ class Company extends Component {
               <p>We are India's first Phygital Fintech logistics company helping Banks, NBFCs, Fintech and Insurance companies in faster document collection, Customer Verification and Debt Collection. Our platform offer complete logistics solution for collection of documents and Debt, online and offline. It is supported by digitally enable pan-India network of Fintech Correspondants and Debt Collection agencies.</p>
             </div>
             <img
-              src="https://cdn.pixabay.com/photo/2015/09/08/15/41/handshakes-930178_1280.jpg"
+              src="https://cdn.pixabay.com/photo/2014/09/10/17/29/handshake-440959_1280.jpg"
               alt="Image 1"
               className="md:w-1/4 w-full h-auto ml-4 object-cover"
             />
