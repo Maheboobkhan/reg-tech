@@ -7,12 +7,13 @@ import FooterForAllComponent from "../components/FooterForAllPage";
 class OfflineAadhar extends React.Component {
     componentDidMount() {
         AOS.init({ duration: 1000, once: true });
+        window.scrollTo(0, 0);
     }
     render() {
         return (
-            <div className="mt-24 font-montserrat" data-aos="fade-up-left">
+            <div className="mt-24 font-myfont" data-aos="fade-up-left">
                 <div className="relative z-[-2] bg-[#e27daa] md:h-[80px] h-[50px] w-[60%] mt-[20px]">
-                    <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-montserrat">
+                    <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-myfont">
                         Offline Aadhar
                     </h1>
                     <div className="absolute top-0 left-[17%] h-full w-full transform -skew-x-[40deg] bg-[#e27daa] -z-10"></div>
@@ -90,7 +91,7 @@ class OfflineAadhar extends React.Component {
                     </div>
                 </div>
 
-                <FooterForAllComponent />
+                {/* <FooterForAllComponent /> */}
             </div>
         );
     }

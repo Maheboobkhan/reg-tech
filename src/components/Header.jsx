@@ -55,17 +55,17 @@
 // //         </div>
 
 // //         <ul className="hidden md:flex lg:gap-x-6 items-center md:gap-x-2 space-x-4 mb-2">
-// //           <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-// //           <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
-// //           <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
-// //           <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
-// //           <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
+// //           <li><Link to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+// //           <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
+// //           <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
+// //           <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
+// //           <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
 // //           <div className="relative inline-block text-left">
 // //             <button
 // //               onClick={toggleDropdown}
 // //               className="py-2 px-4 rounded-md focus:outline-none"
 // //             >
-// //               <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
+// //               <div className='text-[#e27daa] hover:text-black font-myfont font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
 // //             </button>
 // //             <div
 // //               className={`absolute left-3 right-0 top-8 z-50 mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}
@@ -83,7 +83,7 @@
 // //               <a href="#" className="block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
 // //             </div>
 // //           </div>
-// //           <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li>
+// //           <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li>
 
 // //         </ul>
 // //       </div>
@@ -205,17 +205,17 @@
 //   </div>
 
 //   <ul className="hidden md:flex lg:gap-x-6 items-center md:gap-x-2 space-x-4 mb-2">
-//     <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
+//     <li><Link to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
 //     <div className="relative inline-block text-left">
 //       <button
 //         onClick={this.toggleDropdown}
 //         className="py-2 px-4 rounded-md focus:outline-none"
 //       >
-//         <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
+//         <div className='text-[#e27daa] hover:text-black font-myfont font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
 //       </button>
 //       <div
 //         className={`absolute left-3 right-0 top-8 z-50 mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}
@@ -233,10 +233,10 @@
 //         <a href="#" className="block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
 //       </div>
 //     </div>
-//     {/* <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li> */}
+//     {/* <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li> */}
 
 //   </ul>
-//   <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//   <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
 //     <a href="#" className="flex items-center">
 //       <FiLogIn className='mr-2' />Login
 //     </a>
@@ -246,18 +246,18 @@
 
 // <div className={`md:hidden absolute top-[66.5px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
 //   <ul className="flex flex-col items-center space-y-4 py-2">
-//     <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
-//     <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
+//     <li><Link to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
+//     <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
 
 //     <li className="relative">
 //       <button
 //         onClick={this.toggleServicesDropdown}
-//         className="flex items-center text-black font-montserrat active:text-[#e27daa] focus:outline-none"
+//         className="flex items-center text-black font-myfont active:text-[#e27daa] focus:outline-none"
 //       >
-//         <span className='text-[#e27daa] active:text-black font-montserrat font-bold'>RegTech Services</span>
+//         <span className='text-[#e27daa] active:text-black font-myfont font-bold'>RegTech Services</span>
 //         <HiChevronDown
 //           className={`ml-2 text-[#e27daa] transition-transform ${isServicesDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
 //           style={{ transition: 'transform 0.3s ease-in-out' }}
@@ -283,7 +283,7 @@
 //       </div>
 //     </li>
 //   </ul>
-//   <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//   <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
 //     <a href="#" className="flex items-center">
 //       <FiLogIn className='mr-2' />Login
 //     </a>
@@ -395,17 +395,17 @@
 //           </div>
 
 //           <ul className="hidden md:flex lg:gap-x-6 items-center md:gap-x-2 space-x-4 mb-2">
-//             <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
+//             <li><Link to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</a></li>
 //             <div className="relative inline-block text-left">
 //               <button
 //                 onClick={this.toggleDropdown}
 //                 className="py-2 px-4 rounded-md focus:outline-none"
 //               >
-//                 <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
+//                 <div className='text-[#e27daa] hover:text-black font-myfont font-bold'><span>RegTech Services</span><HiChevronDown className="ml-2 inline" /></div>
 //               </button>
 //               <div
 //                 className={`absolute left-3 right-0 top-8 z-50 mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}
@@ -423,10 +423,10 @@
 //                 <a href="#" className="block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
 //               </div>
 //             </div>
-//             {/* <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li> */}
+//             {/* <li className='ml-24'><a href="#" className="flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms"><FiLogIn className='mr-2' />Login</a></li> */}
 
 //           </ul>
-//           <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//           <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
 //             <a href="#" className="flex items-center">
 //               <FiLogIn className='mr-2' />Login
 //             </a>
@@ -555,14 +555,14 @@
 //           </div>
 
 //           <ul className="hidden md:flex items-center space-x-4 mb-2">
-//             <li><Link to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Home</Link></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Company</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Careers</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Blog</a></li>
-//             <li><a href="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Contact Us</a></li>
+//             <li><Link to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Home</Link></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Company</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Careers</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Blog</a></li>
+//             <li><a href="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]">Contact Us</a></li>
 //             <div className="relative inline-block text-left">
 //               <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
-//                 <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'>
+//                 <div className='text-[#e27daa] hover:text-black font-myfont font-bold'>
 //                   <span>RegTech Services</span>
 //                   <HiChevronDown className="ml-2 inline" />
 //                 </div>
@@ -581,7 +581,7 @@
 //                 <a href="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]">Vehicle Verification</a>
 //               </div>
 //             </div>
-//             <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+//             <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
 //               <a href="#" className="flex items-center">
 //                 <FiLogIn className='mr-2' />Login
 //               </a>
@@ -590,18 +590,18 @@
 
 //           <div className={`md:hidden absolute md:top-[66.5px] top-[52px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
 //             <ul className="flex flex-col items-center space-y-4 py-2">
-//               <li><Link onClick={this.removeMenu} to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
-//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
-//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
-//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
+//               <li><Link onClick={this.removeMenu} to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
+//               <li><Link onClick={this.removeMenu} to="#" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
 
 //               <li className="relative">
 //                 <button
 //                   onClick={this.toggleServicesDropdown}
-//                   className="flex items-center text-black font-montserrat active:text-[#e27daa] focus:outline-none"
+//                   className="flex items-center text-black font-myfont active:text-[#e27daa] focus:outline-none"
 //                 >
-//                   <span className='text-[#e27daa] active:text-black font-montserrat font-bold'>RegTech Services</span>
+//                   <span className='text-[#e27daa] active:text-black font-myfont font-bold'>RegTech Services</span>
 //                   <HiChevronDown
 //                     className={`ml-2 text-[#e27daa] transition-transform ${isServicesDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
 //                     style={{ transition: 'transform 0.3s ease-in-out' }}
@@ -623,7 +623,7 @@
 //                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
 //                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</Link>
 //                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</Link>
-//                     <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//                     <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
 //                       <a href="/customer_verification" className="flex items-center">
 //                         <FiLogIn className='mr-2' />Login
 //                       </a>
@@ -632,7 +632,7 @@
 //                 </div>}
 //               </li>
 //             </ul>
-//             <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
+//             <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all transition-duration: 400ms'>
 //               <a href="#" className="flex items-center">
 //                 <FiLogIn className='mr-2' />Login
 //               </a>
@@ -655,10 +655,11 @@
 
 
 
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component, createRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { HiChevronDown } from 'react-icons/hi';
 import { FiLogIn } from 'react-icons/fi';
+import withLocation from './withLocation';
 
 class Navbar extends Component {
   constructor(props) {
@@ -675,15 +676,31 @@ class Navbar extends Component {
     this.toggleServicesDropdown = this.toggleServicesDropdown.bind(this);
     this.removeMenu = this.removeMenu.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
+    this.dropdownRef = createRef();
+    this.buttonRef = createRef();
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    document.addEventListener('mousedown', this.handleClickOutside);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    document.removeEventListener('mousedown', this.handleClickOutside);
   }
+
+
+  handleClickOutside = (event) => {
+    if (
+      this.dropdownRef.current &&
+      !this.dropdownRef.current.contains(event.target) &&
+      this.buttonRef.current &&
+      !this.buttonRef.current.contains(event.target)
+    ) {
+      this.setState({ isOpen: false });
+    }
+  };
 
   handleScroll() {
     const scrollY = window.scrollY;
@@ -720,11 +737,31 @@ class Navbar extends Component {
     });
   }
 
+
+  handleLinkClick = (fetchedLocation, path, id) => {
+    if (path === fetchedLocation) {
+      window.scrollTo({
+        top: document.getElementById(id).offsetTop,
+        behavior: 'smooth',
+      });
+    }
+
+
+    this.setState({
+      isMenuOpen: false,
+      isServicesDropdownOpen: false,
+      isOpen: false,
+    });
+  }
+
   render() {
+    const { location } = this.props;
+    const shouldHideFooter = location.pathname;
+
     const { isMenuOpen, isNavbarFixed, isOpen, isServicesDropdownOpen } = this.state;
 
     return (
-      <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#fff3f9] border-gray-300 z-50' : 'md:bg-transparent bg-[#f1c2d9] z-10'}`}>
+      <nav className={`md:px-10 px-2 py-2 fixed top-0 left-0 w-full transition-all duration-300 ${isNavbarFixed ? 'bg-[#f1c2d9] border-gray-300 z-50' : 'bg-[#fff3f9] z-10'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white leading-4">
             <img src='logo/logo2.png' className='md:w-36 w-28' alt="Logo" />
@@ -745,53 +782,77 @@ class Navbar extends Component {
           </div>
 
           <ul className={`hidden md:flex items-center space-x-4 mb-2 ${isNavbarFixed ? 'text-black' : 'text-gray-400'}`}>
-            <li><Link to="/" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Home</Link></li>
-            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Company</a></li>
-            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Careers</a></li>
-            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Blog</a></li>
-            <li><a href="#" className="font-montserrat hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Contact Us</a></li>
-            <div className="relative inline-block text-left">
+            <div className="relative inline-block text-left"
+              onMouseEnter={() => this.setState({ isOpen: true })}
+              onMouseLeave={() => this.setState({ isOpen: false })}
+            >
               <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
-                <div className='text-[#e27daa] hover:text-black font-montserrat font-bold'>
+                <div className='text-[#e27daa] hover:text-black font-myfont font-bold'>
                   <span>RegTech Services</span>
                   <HiChevronDown className="ml-2 inline" />
                 </div>
               </button>
-              <div className={`absolute left-0 top-full mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`} style={{ zIndex: 1000 }}>
+              <div className={`absolute left-0 top-full w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'visible translate-y-0' : 'invisible translate-y-2'}`} style={{ zIndex: 1000 }}>
                 <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Customer Verification</Link>
                 <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Bank Account Verification</Link>
                 <Link to="/e_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Kyc</Link>
                 <Link to="/video_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Video-Kyc</Link>
                 <Link to="/e_sign" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Sign</Link>
-                <Link to="/aadhar" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</Link>
-                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</Link>
-                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</Link>
-                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</Link>
+                <Link to="/offline_aadhar" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</Link>
+                <Link to="/aadhar_masking" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</Link>
+                <Link to="/face-match" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</Link>
+                <Link to="/e-nach" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'verified-customer-acquisition')}>Verified Customer Acquisition</Link>
+                <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'vehicle-verification')}>Vehicle Verification</Link>
+              </div>
+            </div>
+            <li><Link to="/" className="font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Home</Link></li>
+            <li><Link to="/company" className="font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Company</Link></li>
+            <li><Link to="/careers" className="font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Careers</Link></li>
+            <li><Link to="/blog" className="font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Blog</Link></li>
+            <li><Link to="contact-us" className="font-myfont hover:text-[#e27daa] hover:border-b-2 hover:border-[#e27daa]" onClick={this.removeMenu}>Contact Us</Link></li>
+            {/* <div className="relative inline-block text-left">
+              <button onClick={this.toggleDropdown} className="py-2 px-4 rounded-md focus:outline-none">
+                <div className='text-[#e27daa] hover:text-black font-myfont font-bold'>
+                  <span>RegTech Services</span>
+                  <HiChevronDown className="ml-2 inline" />
+                </div>
+              </button>
+              <div className={`absolute left-0 top-full mt-2 w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'visible translate-y-0' : 'invisible translate-y-2'}`} style={{ zIndex: 1000 }}>
+                <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Customer Verification</Link>
+                <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Bank Account Verification</Link>
+                <Link to="/e_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Kyc</Link>
+                <Link to="/video_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Video-Kyc</Link>
+                <Link to="/e_sign" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Sign</Link>
+                <Link to="/offline_aadhar" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Offline Aadhar</Link>
+                <Link to="/aadhar_masking" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Aadhar Masking</Link>
+                <Link to="/face-match" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>DB Fmatch</Link>
+                <Link to="/e-nach" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>e-NACH/e-Mandate</Link>
                 <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Verified Customer Acquisition</Link>
                 <Link to="#" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Vehicle Verification</Link>
               </div>
-            </div>
-            <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
-              <a href="#" className="flex items-center">
+            </div> */}
+            <button className='ml-10 hidden md:flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+              <Link to="/login" className="flex items-center">
                 <FiLogIn className='mr-2' />Login
-              </a>
+              </Link>
             </button>
           </ul>
 
           <div className={`md:hidden absolute md:top-[66.5px] top-[52px] right-0 min-h-screen z-50 w-2/3 bg-[#F7F7FF] transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 overflow-y-auto`}>
             <ul className="flex flex-col items-center space-y-4 py-2">
-              <li><Link onClick={this.removeMenu} to="/" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
-              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
-              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
-              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
-              <li><Link onClick={this.removeMenu} to="#" className="text-black font-montserrat hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
+              <li><Link onClick={this.removeMenu} to="/" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Home</Link></li>
+              <li><Link onClick={this.removeMenu} to="/company" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Company</Link></li>
+              <li><Link onClick={this.removeMenu} to="/careers" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Careers</Link></li>
+              <li><Link onClick={this.removeMenu} to="blog" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
+              <li><Link onClick={this.removeMenu} to="contact-us" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
 
               <li className="relative">
                 <button
                   onClick={this.toggleServicesDropdown}
-                  className="flex items-center text-black font-montserrat active:text-[#e27daa] focus:outline-none"
+                  className="flex items-center text-black font-myfont active:text-[#e27daa] focus:outline-none"
                 >
-                  <span className='text-[#e27daa] active:text-black font-montserrat font-bold'>RegTech Services</span>
+                  <span className='text-[#e27daa] active:text-black font-myfont font-bold'>RegTech Services</span>
                   <HiChevronDown
                     className={`ml-2 text-[#e27daa] transition-transform ${isServicesDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
                     style={{ transition: 'transform 0.3s ease-in-out' }}
@@ -803,26 +864,26 @@ class Navbar extends Component {
                     <Link onClick={this.removeMenu} to="/account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
                     <Link onClick={this.removeMenu} to="/e_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Kyc</Link>
                     <Link onClick={this.removeMenu} to="/video_kyc" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Video-Kyc</Link>
-                    <Link onClick={this.removeMenu} to="/e-sign" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
-                    <Link onClick={this.removeMenu} to="/aadhar" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
+                    <Link onClick={this.removeMenu} to="/e_sign" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">E-Sign</Link>
+                    <Link onClick={this.removeMenu} to="/offline_aadhar" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Offline Aadhar</Link>
+                    <Link onClick={this.removeMenu} to="/aadhar_masking" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
+                    <Link onClick={this.removeMenu} to="face-match" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
+                    <Link onClick={this.removeMenu} to="/e-nach" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</Link>
                     <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</Link>
-                    <button className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
-                      <a href="/customer_verification" className="flex items-center">
+                    <button onClick={this.removeMenu} className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+                      <Link to="/login" className="flex items-center">
                         <FiLogIn className='mr-2' />Login
-                      </a>
+                      </Link>
                     </button>
                   </ul>
                 </div>}
               </li>
             </ul>
-            <button className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-montserrat text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
-              <a href="#" className="flex items-center">
+            <button onClick={this.removeMenu} className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+              <Link to="login" className="flex items-center">
                 <FiLogIn className='mr-2' />Login
-              </a>
+              </Link>
             </button>
           </div>
         </div>
@@ -831,4 +892,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withLocation(Navbar);

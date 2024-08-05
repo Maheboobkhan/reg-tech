@@ -9,12 +9,13 @@ import 'aos/dist/aos.css';
 class CustomerVerification extends React.Component {
     componentDidMount() {
         AOS.init({ duration: 1000, once: true });
+        window.scrollTo(0, 0);
       }
     render() {
         return (
             <div className='mt-24' data-aos="fade-up-left">
                 <div className="relative z-[-2] bg-[#e27daa] md:h-[80px] h-[50px] w-[60%] mt-[20px]">
-                    <h1 className="absolute top-1/2 left-[52%] transform w-full -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-montserrat tracking-wider">
+                    <h1 className="absolute top-1/2 left-[52%] transform w-full -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-myfont tracking-wider">
                         Customer Verification
                     </h1>
                     <div className="absolute top-0 left-[17%] h-full w-full transform -skew-x-[40deg] bg-[#e27daa] -z-10"></div>
@@ -51,7 +52,7 @@ class CustomerVerification extends React.Component {
                         )
                     })}
                 </div>
-                <FooterForAllComponent />
+                {/* <FooterForAllComponent /> */}
             </div>
         );
     }
@@ -79,7 +80,7 @@ export default CustomerVerification;
 //             <div className="">
 //                 {/* Header Section */}
 //                 <div className="relative z-[-2] bg-[#e27daa] h-[80px] w-[60%] mt-[20px]">
-//                     <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-montserrat">
+//                     <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-myfont">
 //                         Customer Verification
 //                     </h1>
 //                     <div className="absolute top-0 left-[17%] h-full w-full transform -skew-x-[40deg] bg-[#e27daa] -z-10"></div>

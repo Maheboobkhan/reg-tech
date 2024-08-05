@@ -4,21 +4,23 @@ import 'aos/dist/aos.css';
 import '../App.css';
 import Footer from "../components/Footer";
 import FooterForAllComponent from "../components/FooterForAllPage";
+import { Link } from "react-router-dom";
 
 class ESign extends React.Component {
     componentDidMount() {
         AOS.init({ duration: 1000, once: true });
+        window.scrollTo(0, 0);
     }
     render() {
         return (
-            <div className="mt-24 font-montserrat" data-aos="fade-up-left">
+            <div className="mt-24 font-myfont" data-aos="fade-up-left">
                 <div className="relative z-[-2] bg-[#e27daa] md:h-[80px] h-[50px] w-[60%] mt-[20px]">
-                    <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-montserrat">
+                    <h1 className="absolute top-1/2 left-[52%] w-full transform -translate-x-1/2 uppercase -translate-y-1/2 text-white md:text-2xl text-[12px] font-myfont">
                         E-Sign
                     </h1>
                     <div className="absolute top-0 left-[17%] h-full w-full transform -skew-x-[40deg] bg-[#e27daa] -z-10"></div>
                 </div>
-                <h2 className="text-gray-500 mt-10 hover:text-[#e27daa] text-xl font-montserrat border-b border-[#e27daa] cursor-pointer w-fit mx-auto">Schedule a Demo</h2>
+                <Link to="/demo"><h2 className="text-gray-500 mt-10 hover:text-[#e27daa] text-xl font-myfont border-b border-[#e27daa] cursor-pointer w-fit mx-auto">Schedule a Demo</h2></Link>
                 <div className="text-container w-fit mx-auto border-2">
                     <p className="animated-text">Click above to Schedule a Demo</p>
                 </div>
@@ -92,7 +94,7 @@ class ESign extends React.Component {
                     </div>
                 </div>
 
-                <FooterForAllComponent />
+                {/* <FooterForAllComponent /> */}
             </div>
         );
     }

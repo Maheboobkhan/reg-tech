@@ -1,43 +1,106 @@
 /* Basic styles for the container and text */
-.text-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    display: flex;
-  }
-  
-  .animated-text {
-    font-size: 16px;
-    color: #333;
-    white-space: nowrap;
-    position: relative;
-    display: inline-block;
-  }
-  
-  
-  .animated-text::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, #e27daa, transparent);
-    background-size: 200% 100%;
+.animated-text2 {
+  letter-spacing: 15px;
+  font-size: 100px;
+}
+
+.animated-text {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+}
+
+
+.animated-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #e27daa, transparent);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  animation: cursor-pan 3s linear infinite;
+}
+
+
+@keyframes cursor-pan {
+  0% {
     background-position: -100% 0;
-    animation: cursor-pan 3s linear infinite;
   }
-  
-  
-  @keyframes cursor-pan {
-    0% {
-      background-position: -100% 0;
-    }
-    50% {
-      background-position: 100% 0;
-    }
-    100% {
-      background-position: -100% 0;
-    }
+
+  50% {
+    background-position: 100% 0;
   }
-  
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+
+
+
+
+
+
+
+/* Custom styling for the select element */
+.custom-select {
+  background-color: #fff;
+  /* white background */
+  color: black;
+  /* black text color */
+  border-color: black;
+  /* black border */
+}
+
+.custom-select:focus {
+  border-color: #e27daa;
+  /* pink border on focus */
+  box-shadow: 0 0 0 3px rgba(226, 122, 170, 0.3);
+  /* pink shadow on focus */
+}
+
+.custom-select option {
+  background-color: white;
+  /* white background for options */
+  color: black;
+  /* black text color for options */
+}
+
+.custom-select option:hover {
+  background-color: #e27daa;
+  /* pink background on hover */
+  color: white;
+  /* white text color on hover */
+}
+
+
+.text_shadow {
+  text-shadow: 2px 2px 4px white;
+}
+
+
+/* .text___shadow{
+  text-shadow: 2px 2px 4px gray;
+}
+
+.text____shadow{
+  text-shadow: 2px 2px 2px #e27daa;
+} */
+
+
+.text__shadow {
+  text-shadow:
+    1px 1px 0 #19005e,
+    2px 2px 0 #19005e,
+    3px 3px 0 #19005e,
+    4px 4px 0 #19005e,
+    5px 5px 0 #fd0700,
+    6px 6px 0 #fd0700,
+    7px 7px 0 #fd0700;
+}
