@@ -792,7 +792,7 @@ class Navbar extends Component {
                   <HiChevronDown className="ml-2 inline" />
                 </div>
               </button>
-              <div className={`absolute left-0 top-full w-60 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'visible translate-y-0' : 'invisible translate-y-2'}`} style={{ zIndex: 1000 }}>
+              <div className={`absolute left-0 top-full w-64 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity duration-300 ease-in-out ${isOpen ? 'visible translate-y-0' : 'invisible translate-y-2'}`} style={{ zIndex: 1000 }}>
                 <Link to="/customer_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Customer Verification</Link>
                 <Link to="/account_verification" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>Bank Account Verification</Link>
                 <Link to="/e_kyc" className="block px-4 py-2 text-gray-700 border-b border-gray-300 hover:bg-[#e27daa]" onClick={this.removeMenu}>E-Kyc</Link>

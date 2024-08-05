@@ -92,9 +92,23 @@ import { FaEnvelope, FaPhoneAlt, FaCode, FaLink, FaFacebook, FaTwitter, FaLinked
 import { GoMail } from "react-icons/go";
 import { MdOutlineCall } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import withLocation from './withLocation';
 
 class Footer extends React.Component {
+
+    handleLinkClick = (fetchedLocation, path, id) => {
+        if (path === fetchedLocation) {
+            window.scrollTo({
+                top: document.getElementById(id).offsetTop,
+                behavior: 'smooth',
+            });
+        }
+    }
+
     render() {
+        const { location } = this.props;
+        const shouldHideFooter = location.pathname;
+
         return (
             <footer className="pt-8 bg-gray-100 text-gray-800 border-t border-gray-400 w-full">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 font-myfont">
@@ -121,8 +135,8 @@ class Footer extends React.Component {
                         <ul className='flex flex-col gap-y-3'>
                             <li><Link to="/e-nach" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">e-Nach/e-Mandate</Link></li>
                             <li><Link to="/account_verification" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Bank Account Verification</Link></li>
-                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Verified Customer Acquisition</Link></li>
-                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Vehicle Verification</Link></li>
+                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'verified-customer-acquisition')}>Verified Customer Acquisition</Link></li>
+                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'vehicle-verification')}>Vehicle Verification</Link></li>
                         </ul>
                     </div>
 
@@ -175,4 +189,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export default withLocation(Footer);

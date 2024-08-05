@@ -433,7 +433,7 @@ class ContactUs extends Component {
                                     id="enquire-for"
                                     value={enquireFor}
                                     onChange={this.handleSelectChange}
-                                    className="w-full px-3 py-3 border border-black rounded-lg outline-none transition-all duration-300 focus:border-[#e27daa] focus:ring-0"
+                                    className="cursor-pointer w-full px-3 py-3 border border-black rounded-lg outline-none transition-all duration-300 focus:border-[#e27daa] focus:ring-0"
                                 >
                                     <option value="" disabled>Enquire For</option>
                                     <option value="document-collection">Document Collection</option>
