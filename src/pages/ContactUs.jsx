@@ -293,7 +293,7 @@ class ContactUs extends Component {
         const { width, enquireFor } = this.state;
         return (
             <>
-                <div className="max-w-md md:mt-16 mt-10 mb-16 mx-auto p-4 bg-white rounded-lg shadow-lg font-myfont" data-aos="fade-up-left">
+                <div className="max-w-md md:mt-16 mt-24 mb-16 mx-auto p-4 bg-white rounded-lg shadow-lg font-myfont" data-aos="fade-up-left">
                     {width <= 640 ? (
                         <form className="md:space-y-4 space-y-3 px-4 py-6">
                             {/* Name Field */}

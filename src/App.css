@@ -93,6 +93,11 @@
   text-shadow: 2px 2px 2px #e27daa;
 } */
 
+.careers_shadow{
+  text-shadow: 3px 3px 6px gray;
+  border-bottom: 1.5px solid #e27daa;
+}
+
 
 .text__shadow {
   text-shadow:

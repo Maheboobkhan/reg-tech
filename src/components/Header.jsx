@@ -847,7 +847,7 @@ class Navbar extends Component {
               <li><Link onClick={this.removeMenu} to="blog" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Blog</Link></li>
               <li><Link onClick={this.removeMenu} to="contact-us" className="text-black font-myfont hover:text-[#e27daa] hover:border-b-[1.5px] hover:border-[#e27daa]">Contact Us</Link></li>
 
-              <li className="relative">
+              <li className="relative w-[90%] flex justify-center">
                 <button
                   onClick={this.toggleServicesDropdown}
                   className="flex items-center text-black font-myfont active:text-[#e27daa] focus:outline-none"
@@ -858,7 +858,7 @@ class Navbar extends Component {
                     style={{ transition: 'transform 0.3s ease-in-out' }}
                   />
                 </button>
-                {isServicesDropdownOpen && <div className='mt-2 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'>
+                {isServicesDropdownOpen && <div className='mt-6 w-full bg-white absolute border border-gray-200 shadow-lg max-h-screen transition-all duration-300 ease-in-out'>
                   <ul className="py-2 pb-32">
                     <Link onClick={this.removeMenu} to="/customer_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Customer Verification</Link>
                     <Link onClick={this.removeMenu} to="/account_verification" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Bank Account Verification</Link>
@@ -869,8 +869,8 @@ class Navbar extends Component {
                     <Link onClick={this.removeMenu} to="/aadhar_masking" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Aadhar Masking</Link>
                     <Link onClick={this.removeMenu} to="face-match" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">DB Fmatch</Link>
                     <Link onClick={this.removeMenu} to="/e-nach" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">e-NACH/e-Mandate</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Verified Customer Acquisition</Link>
-                    <Link onClick={this.removeMenu} to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]">Vehicle Verification</Link>
+                    <Link to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'verified-customer-acquisition')}>Verified Customer Acquisition</Link>
+                    <Link to="#" className="text-sm block px-4 py-2 text-gray-700 border-b-[1px] border-gray-300 active:bg-[#e27daa]" onClick={() => this.handleLinkClick(shouldHideFooter, '/', 'vehicle-verification')}>Vehicle Verification</Link>
                     <button onClick={this.removeMenu} className='mt-4 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
                       <Link to="/login" className="flex items-center">
                         <FiLogIn className='mr-2' />Login

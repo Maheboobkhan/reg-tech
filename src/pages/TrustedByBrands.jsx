@@ -13,7 +13,7 @@ class Company extends Component {
     render() {
         return (
             <header
-                className="flex flex-col items-center px-5 text-lg font-medium text-center bg-white text-black text-opacity-90 md:mt-[630px] mt-[550px]"
+                className="flex flex-col items-center px-5 text-lg font-medium text-center bg-white text-black text-opacity-90 md:mt-[630px] mt-[630px]"
                 aria-label="Landing Component"
                 role="banner"
             >
