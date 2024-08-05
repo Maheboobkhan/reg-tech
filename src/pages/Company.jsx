@@ -57,16 +57,16 @@ class Company extends Component {
           <p className="text-xl mb-8 text-center max-w-2xl text-black text_shadow">
             Organizing, optimizing, and setting the standards for Fintech logistics & Debt collection using technology in the forefront and human network in the core.
           </p>
-          <div className="md:flex md:flex-row flex-col space-x-4 mt-4">
+          <div className="md:flex md:flex-row flex-col md:space-x-14 mt-4">
             <div className="text-center">
               <p className="text-3xl font-bold text-[#e27d] text_shadow">{this.state.values[0]}+</p>
               <p className="text-lg text-black text_shadow">States and Union Territories</p>
             </div>
-            <div className="text-center md:mt- mt-5">
+            <div className="text-center md:mt-0 mt-5">
               <p className="text-3xl font-bold text-[#e27d] text_shadow">{this.state.values[1]}+</p>
               <p className="text-lg text-black text_shadow">Locations</p>
             </div>
-            <div className="text-center md:mt- mt-5">
+            <div className="text-center md:mt-0 mt-5">
               <p className="text-3xl font-bold text-[#e27d] text_shadow">{this.state.values[2]}+</p>
               <p className="text-lg text-black text_shadow">Fintech Correspondents</p>
             </div>
