@@ -91,6 +91,7 @@ import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaCode, FaLink, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { GoMail } from "react-icons/go";
 import { MdOutlineCall } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
     render() {
@@ -118,10 +119,10 @@ class Footer extends React.Component {
                     <div className="space-y-4 flex flex-col mx-auto">
                         <h2 className="text-lg font-bold text-[#e27daa] font-myfontbold">Our Services</h2>
                         <ul className='flex flex-col gap-y-3'>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">e-Nach/e-Mandate</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Bank Account Verification</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Verified Customer Acquisition</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Vehicle Verification</a></li>
+                            <li><Link to="/e-nach" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">e-Nach/e-Mandate</Link></li>
+                            <li><Link to="/account_verification" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Bank Account Verification</Link></li>
+                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Verified Customer Acquisition</Link></li>
+                            <li><Link to="" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Vehicle Verification</Link></li>
                         </ul>
                     </div>
 
@@ -129,13 +130,13 @@ class Footer extends React.Component {
                     <div className="space-y-4 flex flex-col mx-auto">
                         <h2 className="font-myfontbold font-bold text-lg text-[#e27daa]">Postman & API</h2>
                         <ul className='flex flex-col gap-y-2'>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Customer Verification</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">E-Kyc</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Video KYC</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">E-Sign</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Offline Aadhar</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Aadhar Masking</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">DB Fmatch</a></li>
+                            <li><Link to="/customer_verification" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Customer Verification</Link></li>
+                            <li><Link to="/e_kyc" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">E-Kyc</Link></li>
+                            <li><Link to="/video_kyc" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Video KYC</Link></li>
+                            <li><Link to="/e_sign" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">E-Sign</Link></li>
+                            <li><Link to="/offline_aadhar" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Offline Aadhar</Link></li>
+                            <li><Link to="/aadhar_masking" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Aadhar Masking</Link></li>
+                            <li><Link to="/face-match" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">DB Fmatch</Link></li>
                         </ul>
                     </div>
 
@@ -143,12 +144,12 @@ class Footer extends React.Component {
                     <div className="space-y-4 flex flex-col mx-auto">
                         <h2 className="font-myfontbold font-bold text-lg text-[#e27daa]">Quick Links</h2>
                         <ul className='flex flex-col gap-y-2'>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">About Us</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Blog</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Careers</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Contact Us</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Media</a></li>
-                            <li><a href="#" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Industries We Serve</a></li>
+                            <li><Link to="/company" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">About Us</Link></li>
+                            <li><Link to="/blog" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Blog</Link></li>
+                            <li><Link to="/careers" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Careers</Link></li>
+                            <li><Link to="/contact-us" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Contact Us</Link></li>
+                            <li><Link to="/contact-us" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Media</Link></li>
+                            <li><Link to="/company" className="hover:underline hover:text-[#e27daa] text-[13px] md:text-lg">Industries We Serve</Link></li>
                         </ul>
                     </div>
                 </div>
