@@ -234,6 +234,7 @@ import Company from './pages/Company';
 import Careers from './pages/Careers';
 import Blog from './pages/Blog';
 import withLocation from './components/withLocation';
+import ChatComponent from './components/Chat';
 
 class App extends Component {
   render() {
@@ -248,6 +249,7 @@ class App extends Component {
     return (
       <div className='overflow-x-hidden'>
         <Navbar />
+        <ChatComponent />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/customer_verification' element={<CustomerVerification />} />

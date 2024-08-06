@@ -159,7 +159,9 @@ class Banner extends Component {
         <header
           className="h-screen absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center text-white flex items-center justify-center text-center -z-50 overflow-x-hidden"
           data-aos="fade-up"
-          style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2023/10/21/12/35/ai-generated-8331364_1280.jpg')" }}
+          // style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2023/10/21/12/35/ai-generated-8331364_1280.jpg')" }}
+          // style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2022/02/15/10/39/robot-7014652_1280.jpg')" }}
+          style={{ backgroundImage: "url('Designer3.jpeg')" }}
         >
           <div className="flex flex-col items-center justify-center">
             <h1 className="animated-text2 md:h-[120px] h-[40px] resize-y animate-typing text-xl md:text-8xl font-bold text-[#e27d] overflow-hidden whitespace-nowrap border-r-4 border-r-white md:pr-7">

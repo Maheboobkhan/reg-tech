@@ -52,7 +52,8 @@ class Company extends Component {
     return (
       <div className='font-myfont' data-aos="fade-up-left">
         {/* Banner Section */}
-        <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("https://cdn.pixabay.com/photo/2023/04/02/18/21/ai-generated-7895198_1280.jpg")' }}>
+        {/* <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("https://cdn.pixabay.com/photo/2023/04/02/18/21/ai-generated-7895198_1280.jpg")' }}> */}
+        <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("company/Designer.jpeg")', backgroundPosition: 'right left bottom' }}>
           <h1 className="text-4xl font-bold mb-4 text-[#e27d] text_shadow">Our Mission</h1>
           <p className="text-xl mb-8 text-center max-w-2xl text-black text_shadow">
             Organizing, optimizing, and setting the standards for Fintech logistics & Debt collection using technology in the forefront and human network in the core.

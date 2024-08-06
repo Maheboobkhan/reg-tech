@@ -880,7 +880,7 @@ class Navbar extends Component {
                 </div>}
               </li>
             </ul>
-            <button onClick={this.removeMenu} className='mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
+            <button onClick={this.removeMenu} className='mt-10 mx-auto md:hidden flex items-center px-4 py-1.5 font-bold hover:border-none hover:underline hover:text-[#e27daa] bg-white font-myfont text-[#e27daa] border-2 border-[#e27daa] cursor-pointer transition-all duration-400'>
               <Link to="login" className="flex items-center">
                 <FiLogIn className='mr-2' />Login
               </Link>

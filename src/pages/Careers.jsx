@@ -59,7 +59,8 @@ class Careers extends Component {
         return (
             <div className='font-myfont' data-aos='fade-up-left'>
                 {/* Banner Section */}
-                <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("https://cdn.pixabay.com/photo/2021/12/14/20/21/book-6871220_1280.jpg")' }}>
+                {/* <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("https://cdn.pixabay.com/photo/2021/12/14/20/21/book-6871220_1280.jpg")' }}> */}
+                <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("careers/Designer.jpeg")' }}>
                     <h1 className="md:text-8xl text-6xl font-light mb-4 text-[#e27daa] careers_shadow">Careers</h1>
                 </div>
 
